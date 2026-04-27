@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Good Luck Àñveshä ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg,#ffd6e8,#fff0c9,#f7d8ff,#e2ffe8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Mobile Card */
+.card{
+    width:92%;
+    max-width:390px;
+    min-height:78vh;
+    background:rgba(255,255,255,0.20);
+    backdrop-filter: blur(14px);
+    border-radius:28px;
+    padding:28px 22px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.14);
+    z-index:2;
+    animation:pop 1.2s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+h1{
+    font-size:2.1rem;
+    color:#ff2e7a;
+    line-height:1.3;
+    margin-bottom:18px;
+}
+
+.name{
+    color:#d1005b;
+    font-weight:bold;
+}
+
+p{
+    font-size:1.05rem;
+    color:#5c3551;
+    line-height:1.8;
+}
+
+.highlight{
+    color:#ff1493;
+    font-weight:bold;
+}
+
+button{
+    margin-top:22px;
+    padding:14px;
+    width:100%;
+    border:none;
+    border-radius:40px;
+    background:#ff2e7a;
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:active{
+    transform:scale(0.96);
+}
+
+/* Floating Flowers */
+.flower{
+    position:absolute;
+    font-size:24px;
+    animation:float linear infinite;
+    opacity:0.9;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(110vh) rotate(0deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-10vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes pop{
+    from{
+        opacity:0;
+        transform:translateY(25px) scale(0.9);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+/* Hide desktop feel */
+@media (min-width:768px){
+    body{
+        background:#111;
+    }
+    .card{
+        max-width:390px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Flower Rain -->
+<div class="flower" style="left:5%; animation-duration:8s;">🌸</div>
+<div class="flower" style="left:15%; animation-duration:11s;">🌺</div>
+<div class="flower" style="left:25%; animation-duration:9s;">🌷</div>
+<div class="flower" style="left:35%; animation-duration:12s;">🌼</div>
+<div class="flower" style="left:45%; animation-duration:8s;">🌹</div>
+<div class="flower" style="left:55%; animation-duration:10s;">🌸</div>
+<div class="flower" style="left:65%; animation-duration:13s;">🌺</div>
+<div class="flower" style="left:75%; animation-duration:9s;">🌷</div>
+<div class="flower" style="left:85%; animation-duration:11s;">🌼</div>
+<div class="flower" style="left:95%; animation-duration:8s;">🌹</div>
+
+<div class="card">
+
+<h1>Good Luck <span class="name">Àñveshä ❤️</span></h1>
+
+<p>
+Just like every flower blooms in its own time,<br>
+I know <span class="highlight">you will bloom with success</span> too ✨<br><br>
+
+Believe in yourself, stay calm, and write confidently.<br>
+You are intelligent, beautiful, hardworking, and capable of everything 🌷<br><br>
+
+No matter what happens, I’ll always be proud of you 🌺<br>
+Go shine and conquer your exams, my flower girl 🌼❤️
+</p>
+
+<button onclick="alert('All the Best Àñveshä ❤️ You will do amazing 🌸✨')">
+Tap for Blessing 🌸
+</button>
+
+</div>
+
+</body>
+</html>
